@@ -1,0 +1,8 @@
+
+<p>home-page works!{{value}}</p>
+<input [(ngModel)]="value">
+<p *ngIf="!value; else falsy">does null equal false</p>
+<ng-template #falsy>
+    <p> when string is not null</p>
+</ng-template>
+ <p>{{value}}</p>
